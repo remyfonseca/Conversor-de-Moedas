@@ -1,0 +1,190 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito&display=swap');
+
+body {
+    box-sizing: border-box;
+    font-family: "Roboto Mono", monospace;
+    text-align: center;
+    font-family: 'Nunito', sans-serif;
+    background-color: #ffffff;
+    background-size: cover;
+    background-image: url(background.jpg);
+    background-position: center top;
+    background-repeat: no-repeat;
+    height: 100vh;
+    user-select: none;
+    overflow: hidden;
+    
+}
+
+  
+.container {
+    position: absolute;
+    top: 40%;  
+    left: 50%; 
+    transform: translate(-50%, -50%);
+    text-align: center;
+    width: 530px;
+    padding: 25px;
+    background: rgba(24, 36, 27, 0.644);
+    box-shadow: 0 8px 20px 0 rgba(31, 135, 54, 0.37);
+    border-radius: 10px;
+    border: 2px solid rgba(12, 78, 15, 0.18);
+    font-size: 20px;
+    font-weight: bold;
+   
+}
+
+.page-title {
+    color: #ffffff;
+    margin: 0 0 5px;
+}
+
+.page-logo {
+    width: 200px;
+}
+  
+.alura-logo {
+    width: 40px;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}
+.money{
+    width: 180px;
+}
+body > img {
+    margin: 0 10px;
+}
+  
+img {
+    max-height: 250px;
+}
+
+input{
+    height: 20px;
+    padding: 5px;
+    border-radius: 5px;
+    margin: 10px 0;
+}
+
+input[type=number]::-webkit-inner-spin-button { 
+    -webkit-appearance: none;
+    
+}
+input[type=number] { 
+   -moz-appearance: textfield;
+   appearance: textfield;
+}
+
+input::placeholder{
+    text-align: center;
+}
+
+button{
+    cursor: pointer;
+    padding: 10px;
+    width: 120px;
+    color: #ffffff;
+    border: 2px solid rgba(77, 12, 12, 0.527);
+    font-size: 12px;
+    font-weight: bold;
+    background-color: rgb(209, 17, 17);
+    border-radius: 5px;
+    margin: 7px 0 0 5px;
+}
+
+button:hover{
+    font-size: 15px;
+    background-color: rgb(146, 10, 10);  
+}
+
+p {
+    color: rgb(231, 230, 230);
+    background-color: rgba(0, 0, 0, 0.438);
+    font-size: 18px;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+
+footer{
+    background: rgba(24, 36, 27, 0.644);
+    width: 100%;
+    color:  #ffffff;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
+footer > a{
+    text-decoration: none;
+    color: white;
+    cursor: pointer;
+}
+
+
+
+  
+  @media only screen and (max-width: 479px) {
+    .container {
+      width: 80%;
+      top: 40%;
+    }
+  
+    .page-title {
+      font-size: 36px;
+    }
+  
+    .page-logo {
+      width: 180px;
+    }
+  
+    .money {
+      width: 180px;
+    }
+  
+    input {
+      font-size: 15px;
+    }
+  
+    button {
+      text-align: center;
+      font-size: 15px;
+      width: 100px;
+    }
+  
+    p {
+      font-size: 16px;
+    }
+  
+    footer {
+      font-size: 15px;
+    }
+
+
+    @media only screen and (max-width: 450px) {
+        .container {
+            width: 85%;
+            font-size: 16px;
+        }
+      
+        .page-title {
+            font-size: 40px;
+        }
+      
+        .page-logo, .money {
+            width: 150px;
+        }
+      
+        button {
+            width: 100px;
+            font-size: 14px;
+        }
+      
+        p {
+            font-size: 16px;
+        }
+    }
+    
+}
+  
